@@ -384,7 +384,7 @@ span{
 
 .services-box{
     background-color: var(--main-color);
-    height: 300px;
+    min-height: 400px;
     border-radius: 3rem;
     border-radius: 5px solid transparent;
     cursor: pointer;
@@ -690,7 +690,7 @@ span{
 
     }
     .services h2{
-        margin-bottom: 3rem;
+        margin-bottom:1rem;
 
     }
     .services-container{
