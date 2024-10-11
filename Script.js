@@ -26,3 +26,36 @@ menuIcon.addEventListener('click', (e)=>{
     menuIcon.classList.toggle('bx-x');
     navBar.classList.toggle('active')
 })
+
+
+
+
+document.getElementById('telegramForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const name = document.getElementById('user').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value
+    const message = document.getElementById('message').value;
+    
+    
+    const telegramMessage = `Name: ${name}\nEmail: ${email} \nSubject: ${subject} \nMessage: ${message}`;
+    const botToken = '7906483913:AAF6DJTxZEx6znQ1o_2_JtpSz1z5JXEge5s';
+    const chatId = '1898020431';
+    
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(telegramMessage)}`;
+    
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                alert('Message sent successfully!');
+            } else {
+                alert('Error sending message.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error sending message.');
+        });
+});
