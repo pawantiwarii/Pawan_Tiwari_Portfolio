@@ -35,11 +35,12 @@ document.getElementById('telegramForm').addEventListener('submit', function(e) {
     
     const name = document.getElementById('user').value;
     const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value
+    const number =  document.getElementById('number').value
+    const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
     
     
-    const telegramMessage = `Name: ${name}\nEmail: ${email} \nSubject: ${subject} \nMessage: ${message}`;
+    const telegramMessage = `Name: ${name}\nEmail: ${email} \nPhone Number: ${number} \nSubject: ${subject} \nMessage: ${message}`;
     const botToken = '7906483913:AAF6DJTxZEx6znQ1o_2_JtpSz1z5JXEge5s';
     const chatId = '1898020431';
     
