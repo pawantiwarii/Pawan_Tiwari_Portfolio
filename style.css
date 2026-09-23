@@ -835,12 +835,14 @@ span{
 
 
 @media (max-width: 390px) {
-    
-}.heading{
+
+    #testimonials .heading{
     font-size: 3.2 rem !important;
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
     white-space: normal !important;
     line-height: 1.1;
+    }
+    
 }
