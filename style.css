@@ -423,7 +423,7 @@ span{
 }
 
 .testimonials{
-    background: var(--second-bg-color);
+    background: #1a2332;
 }
 .testimonials-box{
     background-size: cover;
