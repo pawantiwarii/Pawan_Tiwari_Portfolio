@@ -238,19 +238,19 @@ span{
 @keyframes words {
     0%, 
     20%{
-        content: "Frontend-Developer";
+        content: "Data Analyst";
     }
     21%,40%{
-        content: "C++ Developer";
+        content: "Data Scientist";
     }
     41%, 60%{
-        content: "Data Analysis";
+        content: "ML Engineer";
     }
     61%, 80%{
-        content: "Web Apps Developer";
+        content: "Python Developer";
     }
     81%, 100%{
-        content: "Backend-Developer";
+        content: "Data Analyst";
     }
 }
 @keyframes typing {
@@ -640,6 +640,69 @@ span{
 }
 
 @media (max-width:895px) {
+    #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width:50%;
+        padding: 1rem 3%;
+        background:rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+
+    }
+    .home-content h1{
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+    .home-content p{
+        max-width: 600px;
+        margin: 0 auto;
+
+    }
+    .home-img img{
+        width: 56vw;
+
+    }
+    .services h2{
+        margin-bottom:1rem;
+
+    }
+    .services-container{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+
+    
+}
+
+@media (max-width:768px) {
     #menu-icon{
         display: block;
         cursor: pointer;
