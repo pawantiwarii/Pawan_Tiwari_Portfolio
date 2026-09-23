@@ -768,10 +768,7 @@ span{
 }
 
 @media (max-width:480px) {
-    #menu-icon{
-        display: block;
-        cursor: pointer;
-    }
+   
     .navbar{
         position: absolute;
         top: 100%;
@@ -805,14 +802,11 @@ span{
 
     }
     .home-content h1{
-        font-size: 8rem;
-        margin-top: 3rem;
+        font-size: 3rem;
+        margin-top: -11rem;
+       
     }
-    .home-content p{
-        max-width: 600px;
-        margin: 0 auto;
-
-    }
+    
     .home-img img{
         width: 56vw;
 
@@ -834,15 +828,51 @@ span{
 }
 
 
-@media (max-width: 390px) {
+@media (max-width: 375px) {
 
     #testimonials .heading{
-    font-size: 3.2 rem !important;
+    font-size: 5.2rem !important;
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
     white-space: normal !important;
     line-height: 1.1;
+
+    }
+     #menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .home-content{
+        width: 100%;
+        max-width: 100%;
+    }
+     .home-content p{
+    
+        margin: 0 auto;
+        text-wrap: auto;
+        white-space: normal !important;
+      
+        overflow-wrap: break-word !important;
+        word-break: break-all;
+        hyphens: auto;
+        max-width: 100%;
+
+    }
+
+     .btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.1rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
     }
     
 }
