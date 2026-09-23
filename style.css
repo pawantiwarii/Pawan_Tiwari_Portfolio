@@ -383,7 +383,7 @@ span{
 }
 
 .services-box{
-    background-color: var(--main-color);
+    background-color: #0ea5e9;
     min-height: 400px;
     border-radius: 3rem;
     border-radius: 5px solid transparent;
